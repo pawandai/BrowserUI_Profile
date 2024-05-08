@@ -1,0 +1,123 @@
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.windowControls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dotsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.close {
+  background-color: rgb(235, 16, 16);
+}
+
+.minimize {
+  background-color: rgb(218, 218, 43);
+  height: 25px;
+  width: 25px;
+  font-size: 15px;
+}
+
+.maximize {
+  background-color: rgb(52, 228, 52);
+  height: 25px;
+  width: 25px;
+  font-size: 15px;
+}
+
+.icon {
+  transform: scale(0);
+  transition: transform 0.1s ease-in-out;
+}
+
+.navigationIcon:hover {
+  transition: color 0.2s ease-in-out;
+  color: rgb(110, 110, 110);
+}
+
+.dotsWrapper:hover .icon {
+  transform: scale(1);
+}
+
+.maximizeIcon {
+  width: 15px;
+  height: 15px;
+}
+
+.chromeIcon {
+  font-size: 35px;
+  right: 10px;
+  top: 6px;
+  color: rgb(83, 80, 80);
+  transition: all ease-in-out 0.1s;
+}
+
+.chromeIcon:hover {
+  color: #000;
+  transform: translateX(3px);
+}
+
+.input {
+  padding: 8px 18px;
+  font-size: 18px;
+  border-radius: 5rem;
+  border: #000 solid 2px;
+  flex: 1;
+}
+
+.input:focus {
+  border: #545252 solid 2px;
+}
+
+.navigationWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 50px;
+}
+
+.leftNavigation,
+.rightNavigation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 565px) {
+  .go,
+  .home,
+  .reload {
+    display: none;
+  }
+}
+
+@media (max-width: 465px) {
+  .navigationWrapper {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 385px) {
+  .home,
+  .reload {
+    display: flex;
+  }
+
+  .input {
+    display: none;
+  }
+}

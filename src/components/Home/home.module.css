@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+  min-height: 80vh;
+}
+
+.heading {
+  color: #fd8900;
+  font-size: 3rem;
+  user-select: none;
+}
+
+.description {
+  font-size: 1.2rem;
+  user-select: none;
+}
+
+.button {
+  font-size: 1.2rem;
+  font-family: inherit;
+  padding: 8px 20px;
+  border-radius: 5em;
+  user-select: none;
+  border: none;
+  transition: all ease-in-out 0.1s;
+}
+
+.button:hover {
+  background-color: #fd8900;
+  color: white;
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  flex: start;
+  gap: 20px;
+  max-width: 800px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  transition: transform ease-in-out 0.1s;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
