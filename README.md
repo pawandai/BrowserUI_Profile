@@ -1,8 +1,9 @@
-This is the concept portfolio that I built using html, css and javascript. Now, I wanted to remaster this using Next.js
+This was the concept portfolio that I built using html, css and javascript. Now, I want to remaster this using Next.js
 
 # Checkout the original website that I built a long time ago
 
 [Portfolio](https://pawandai.github.io/portfolio/)
+This is not responsive, so you might need to zoom out to fit all the contents in the viewport.
 
 ## Getting Started
 
