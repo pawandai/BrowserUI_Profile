@@ -4,7 +4,8 @@
   padding: 10px 10px;
   border-radius: 50px;
   margin: auto;
-  position: sticky;
+  position: absolute;
+  background-color: white;
   bottom: 5px;
   left: 0;
   right: 0;

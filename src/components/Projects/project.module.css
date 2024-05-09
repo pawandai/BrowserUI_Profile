@@ -1,0 +1,26 @@
+.inactive {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: -1;
+  top: -150vh;
+  height: 100vh;
+  max-width: 768px;
+  transition: all ease-in-out 0.3s;
+}
+
+.image {
+  border-radius: 20px;
+  transition: transform ease-in-out 0.2s;
+}
+
+@media (max-width: 550px) {
+  .image {
+    width: 300px;
+    height: 169px;
+  }
+}
+
+.container {
+  top: 0;
+}

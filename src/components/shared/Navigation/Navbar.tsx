@@ -2,14 +2,12 @@
 
 import { navLinks } from '@/constants';
 import styles from './navigation.module.css';
-import { useState } from 'react';
 import { useAppDispatch, useAppSelector } from '@/hooks';
 import { addState } from '@/redux/slice/activeSlice';
 
 const Navbar = () => {
-  const [clickedNav, setClickedNav] = useState<number>(1);
-  const activeTab = useAppSelector((state) => state.active.value);
   const dispatch = useAppDispatch();
+  const activeTab = useAppSelector((state) => state.active.value);
 
   return (
     <div className={styles.navContainer}>
@@ -18,15 +16,14 @@ const Navbar = () => {
           return (
             <div
               onClick={() => {
-                setClickedNav(nav.id);
-                dispatch(addState(clickedNav));
+                dispatch(addState(nav.id));
               }}
               key={nav.id}
               className={styles.navItem}
             >
               <span
                 className={`${styles.linkIcon} ${
-                  clickedNav === nav.id ? styles.active : ''
+                  activeTab === nav.id ? styles.active : ''
                 }`}
               >
                 {<nav.icon />}

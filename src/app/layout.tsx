@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={ubranist.className}>{children}</body>
+      <body style={{ overflow: 'hidden' }} className={ubranist.className}>
+        {children}
+      </body>
     </html>
   );
 }

@@ -12,6 +12,8 @@ import {
 
 import styles from './wrapper.module.css';
 import { PropsWithChildren } from 'react';
+import { FaChrome } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Wrapper = ({ children }: PropsWithChildren) => {
   return (
@@ -28,7 +30,7 @@ const Wrapper = ({ children }: PropsWithChildren) => {
             <Maximize2 className={`${styles.maximizeIcon} ${styles.icon}`} />
           </div>
         </div>
-        <Chrome className={`${styles.chromeIcon}`} />
+        <FaChrome className={`${styles.chromeIcon}`} />
       </div>
       <hr />
       <div className={styles.navigationWrapper}>
@@ -37,7 +39,9 @@ const Wrapper = ({ children }: PropsWithChildren) => {
           <CircleArrowOutDownRightIcon
             className={`${styles.navigationIcon} ${styles.reload}`}
           />
-          <Home className={`${styles.navigationIcon} ${styles.home}`} />
+          <Link href={'/'}>
+            <Home className={`${styles.navigationIcon} ${styles.home}`} />
+          </Link>
         </div>
         <input type='text' className={styles.input} />
         <div className={styles.rightNavigation}>

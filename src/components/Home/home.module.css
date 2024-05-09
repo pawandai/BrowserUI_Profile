@@ -2,9 +2,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
   gap: 20px;
   max-width: 800px;
   min-height: 75vh;
+  transition: all ease-in-out 0.3s;
+}
+
+.inactive {
+  top: -150vh;
 }
 
 .heading {
