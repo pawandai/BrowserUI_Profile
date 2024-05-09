@@ -12,6 +12,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 5px 0;
+  padding: 0 10px;
 }
 
 .dotsWrapper {
@@ -88,6 +90,7 @@
   justify-content: space-between;
   gap: 20px;
   padding: 0 50px;
+  margin: 5px 0;
 }
 
 .leftNavigation,
